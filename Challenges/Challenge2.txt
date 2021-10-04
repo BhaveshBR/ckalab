@@ -1,0 +1,9 @@
+1. Can you configure Configure Certificate Rotation for the Kubelet and Restart Kubelet?
+
+2. How to Taint a node and then untaint it?
+
+3. Can you provide command to find the health of etcd?
+
+4. Can you provide imperative command to join a new worker node to cluster?
+
+5. Can you provide command to set a node with label as "volume=SSD"?

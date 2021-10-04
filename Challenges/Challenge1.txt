@@ -1,3 +1,5 @@
 1. Command to List all the Pods sorted by name?
+Ans - kubectl get pods --sort-by=.metadata.name
 
 2. Create a busybox pod with command sleep 3600. You need to use image as busybox.
+Ans -kubectl run busybox --image=busybox --restat=Never -- bin/sh -c "sleep 3600"
