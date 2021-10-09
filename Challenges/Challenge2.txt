@@ -1,9 +1,16 @@
 1. Can you configure Configure Certificate Rotation for the Kubelet and Restart Kubelet?
+Ans -> Refer to Lesson 3 Lab -"7_Managing Clusters with Kubelet.docx"
 
 2. How to Taint a node and then untaint it?
+Ans -> kubectl taint nodes node1 key1=value1:NoSchedule
+       kubectl taint nodes node1 node-role.kubernetes.io/master-
+       
 
 3. Can you provide command to find the health of etcd?
+Ans -> etcdctl --endpoints=$ENDPOINTS endpoint health
 
 4. Can you provide imperative command to join a new worker node to cluster?
+Ans -> kubeadm join --discovery-token abcdef.1234567890abcdef --discovery-token-ca-cert-hash sha256:1234..cdef 1.2.3.4:6443
 
 5. Can you provide command to set a node with label as "volume=SSD"?
+Ans -> kubectl label nodes <node-name> volume=SSD
